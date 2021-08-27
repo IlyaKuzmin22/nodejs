@@ -1,0 +1,38 @@
+nav {
+    background-color: #5a629e;
+}
+
+.nav-wrapper {
+    padding: 0 2rem;
+}
+
+.price,
+.card_price {
+    font-size: 2rem;
+}
+
+.car{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car h1 {
+    margin-bottom: 2rem;
+}
+
+.car img {
+    max-width: 1000px;
+    height: auto;
+}
+
+.car .price.big {
+    font-size: 2.5rem;
+}
+
+.card-action.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
