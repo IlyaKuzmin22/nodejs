@@ -1,0 +1,27 @@
+<h1>Редактировать {{cars.title}}</h1>
+
+<form action="/cars/edit" method="post">
+
+  <div class="input-field">
+    <input id="title" type="text" name="title" class="validate" required value="{{cars.title}}"/>
+    <label for="title">Модель авто</label>
+    <span class="helper-text" data-error="Введите модель авто"></span>
+  </div>
+
+  <div class="input-field">
+    <input id="price" type="number" name="price" class="validate" required min="1" value="{{cars.price}}"/>
+    <label for="price">Цена</label>
+    <span class="helper-text" data-error="Введите цену"></span>
+  </div>
+
+  <div class="input-field">
+    <input id="img" type="text" name="img" class="validate" required value="{{cars.img}}"/>
+    <label for="img">URl картинки</label>
+    <span class="helper-text" data-error="Введите URL картинки"></span>
+  </div>
+
+  <input type="hidden" name="id" value="{{cars.id}}">
+
+  <button class="btn btn-primary">Редактировать авто</button>
+
+</form>
